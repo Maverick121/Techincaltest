@@ -26,7 +26,8 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: ./proj1
+          file: ./home/prasoonk/proj1/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
 
